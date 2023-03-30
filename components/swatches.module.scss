@@ -2,4 +2,21 @@
     padding: 0;
     margin: 0;
     display: flex;
+    .swatch {
+        list-style: none; // removes bullets
+        margin: 0;
+        padding: 0;
+        width: 3rem;
+        height: 3rem;
+        background-color: gray;
+        border: 5px solid transparent;
+        cursor: pointer;
+        transition: all .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.active {
+            border-color: limegreen;
+        }
+    }
 }
