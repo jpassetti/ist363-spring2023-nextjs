@@ -1,7 +1,10 @@
+@use '../sass/abstracts/vars';
+
 .swatches {
     padding: 0;
     margin: 0;
     display: flex;
+    background-color: vars.$color_blue;
     .swatch {
         list-style: none; // removes bullets
         margin: 0;
