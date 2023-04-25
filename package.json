@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "production" : "npm run build && npm run start"
   },
   "dependencies": {
     "classnames": "^2.3.2",
