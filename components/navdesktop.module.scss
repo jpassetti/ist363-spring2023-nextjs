@@ -1,0 +1,30 @@
+@use '../sass/abstracts/mixins';
+@use '../sass/abstracts/vars';
+
+.navdesktop {
+    //background-color: pink;
+    display: none;
+    &_list {
+        //background-color: limegreen;
+        display: flex;
+        li {
+            font-family: Arial;
+            font-size: 1rem;
+            font-weight: bold;
+            color: black;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            a {
+                color: black;
+                text-decoration: none;
+                &:hover, &:focus {
+                    text-decoration: underline;
+                    color: vars.$color_blue;
+                }
+            }
+        }
+    }
+    @include mixins.breakpoint(laptop) {
+        display: block;
+    }
+}

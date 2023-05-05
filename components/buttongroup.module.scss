@@ -1,0 +1,12 @@
+@use '../sass/abstracts/mixins';
+
+.buttongroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+    @include mixins.breakpoint(tablet) {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
